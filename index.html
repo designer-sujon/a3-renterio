@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <!-- google fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
@@ -32,39 +32,14 @@
         }
       </Style>
 </head>
-<body class="font-manrope">
+<body class="font-manrope tracking-tighter">
     <header>
         <nav class="container mx-auto mt-5">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li> 
-                        <li><a>Services</a></li> 
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                        </ul>
-                  </div>
-                  <a class="text-3xl font-black cursor-pointer"><i class="fa-solid fa-arrow-right bg-primary p-2 rounded-full text-black -rotate-45"></i> Renterio</a>
+            <div class="navbar justify-around items-center">
+                <div class="">
+                  <a class="text-3xl font-black cursor-pointer"><i class="fa-solid fa-arrow-right bg-primary p-2 rounded-full text-black -rotate-45"></i> Rinterio</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 items-center">
                     <li class="font-bold text-lg"><a>Home</a></li> 
                     <li><a>Services</a></li> 
@@ -73,12 +48,27 @@
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end lg:flex space-x-4">
+                  <div class="hidden md:flex lg:flex space-x-3">
                     <i class="fa-solid fa-magnifying-glass text-black p-2 bg-white rounded-full border border-black cursor-pointer"></i>
                     <i class="fa-solid fa-cart-shopping  text-black p-2 bg-white rounded-full border border-black cursor-pointer"></i>
-                  <a class="btn bg-primary text-xl font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right bg-black p-2 rounded-full text-white -rotate-45"></i></a>
-                </div>
+                    <a class="btn bg-primary text-xl font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right bg-black p-2 rounded-full text-white -rotate-45"></i></a>
+                  </div>
+                  <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button">
+                      <i class="fa-solid fa-bars text-2xl bg-white border border-gray-200 rounded-full p-2"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
+                        <li><a>Home</a></li> 
+                        <li><a>Services</a></li> 
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        </ul>
+                  </div>
               </div>
+              
         </nav>
     </header>
     <main>
