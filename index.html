@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renterio</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind & daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,6 +19,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary': '#ABEF5F',
               }
             }
           }
@@ -31,7 +34,52 @@
 </head>
 <body class="font-manrope">
     <header>
-        <h1 class="text-5xl">Hello Tailwind</h1>
+        <nav class="container mx-auto mt-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li> 
+                        <li><a>Services</a></li> 
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        </ul>
+                  </div>
+                  <a class="text-3xl font-black cursor-pointer"><i class="fa-solid fa-arrow-right bg-primary p-2 rounded-full text-black -rotate-45"></i> Renterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 items-center">
+                    <li class="font-bold text-lg"><a>Home</a></li> 
+                    <li><a>Services</a></li> 
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end lg:flex space-x-4">
+                    <i class="fa-solid fa-magnifying-glass text-black p-2 bg-white rounded-full border border-black cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping  text-black p-2 bg-white rounded-full border border-black cursor-pointer"></i>
+                  <a class="btn bg-primary text-xl font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right bg-black p-2 rounded-full text-white -rotate-45"></i></a>
+                </div>
+              </div>
+        </nav>
     </header>
     <main>
         
