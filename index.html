@@ -20,6 +20,7 @@
               colors: {
                 clifford: '#da373d',
                 'primary': '#ABEF5F',
+                'primary-2': '#e7fece',
               }
             }
           }
@@ -33,7 +34,7 @@
       </Style>
 </head>
 <body class="font-manrope tracking-tighter">
-    <header>
+    <header class="bg-gradient-to-r from-white to-gray-50">
         <nav class="container mx-auto mt-5">
             <div class="navbar justify-around items-center">
                 <div class="">
@@ -49,8 +50,8 @@
                   </ul>
                 </div>
                   <div class="hidden md:flex lg:flex space-x-3">
-                    <i class="fa-solid fa-magnifying-glass text-black p-2 bg-white rounded-full border border-black cursor-pointer"></i>
-                    <i class="fa-solid fa-cart-shopping  text-black p-2 bg-white rounded-full border border-black cursor-pointer"></i>
+                    <i class="fa-solid fa-magnifying-glass text-black p-2 bg-white rounded-full border border-gray-400 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping  text-black p-2 bg-white rounded-full border border-gray-400 cursor-pointer"></i>
                     <a class="btn bg-primary text-xl font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right bg-black p-2 rounded-full text-white -rotate-45"></i></a>
                   </div>
                   <div class="dropdown lg:hidden">
@@ -67,9 +68,23 @@
                         <li><a>Contact Us</a></li>
                         </ul>
                   </div>
-              </div>
-              
+              </div>  
         </nav>
+        <!-- Banner Section -->
+        <div class="hero">
+          <div class="flex-col justify-center items-center hero-content text-center">
+            <div>
+              <img class="w-[500px]" src="assets/banner.png" alt="">
+            </div>
+            <div class="lg:w-3/4 space-y-3">
+              <h1 class="text-4xl lg:text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+              <p class="lg:py-6 lg:w-3/4 mx-auto text-gray-600">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button class="btn bg-primary-2 rounded-3xl p-x-2 border border-primary">View Details <i class="fa-solid fa-arrow-right bg-primary p-2 rounded-full text-black -rotate-45"></i> </button>
+            </div>
+          </div>
+        </div>
     </header>
     <main>
         
